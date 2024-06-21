@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    android:padding="10dp"
+    android:background="@drawable/post_background"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:id="@+id/post_user_details"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_height="50dp"
+                android:background="@color/black"
+                android:scaleType="centerCrop"
+                android:id="@+id/post_profile_pic"
+                android:contentDescription="profile_pic" />
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/post_name"
+                android:textColor="@color/white"
+                android:text="Your Name"/>
+            <TextView
+                android:textColor="@color/white_40"
+                android:id="@+id/post_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="example@domain.com"/>
+
+        </LinearLayout>
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:tint="@color/white"
+            android:id="@+id/post_save_btn"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/bookmark_regular"
+            android:scaleType="centerInside"
+            android:background="@drawable/avatar_background"
+            android:contentDescription="delete_button" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/post_image"
+            />
+    </androidx.cardview.widget.CardView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:id="@+id/post_caption"
+        android:text="this is caption of this photo"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:tint="@color/white"
+            android:id="@+id/post_like_btn"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/heart_regular"
+            android:scaleType="centerInside"
+            android:background="@drawable/avatar_background"
+            android:contentDescription="like_button" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="0 likes"
+            android:id="@+id/post_likes_count"
+            android:textColor="@color/white_40"
+            android:layout_height="wrap_content"
+            />
+        <ImageButton
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:tint="@color/white"
+            android:id="@+id/post_share_btn"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/paper_plane_solid"
+            android:scaleType="centerInside"
+            android:background="@drawable/avatar_background"
+            android:contentDescription="share_button" />
+    </LinearLayout>
+</LinearLayout>

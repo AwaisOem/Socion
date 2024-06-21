@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:tooltipText="Home"
+        android:iconTint="@color/white"
+        android:icon="@drawable/house_solid"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_create"
+        android:tooltipText="Create Post"
+        android:icon="@drawable/plus_solid"
+        android:iconTint="@color/white"
+        android:title=""
+        />
+
+<!--    android:icon="@drawable/plus_solid"-->
+<!--        android:icon="@drawable/plus_solid"-->
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/user_solid"
+        android:tooltipText="Profile"
+        android:iconTint="@color/white"
+        android:title="" />
+
+</menu>
