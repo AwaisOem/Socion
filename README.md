@@ -2,13 +2,14 @@ Socion is Social Media App where you can post anonymously as well as publicaly, 
 
 
 <br/>
-<br/>
-<br/>
 
 
 # Demo
 
+[![YouTube Video](https://img.youtube.com/vi/_SYlG7d6jxA/0.jpg)](https://www.youtube.com/watch?v=_SYlG7d6jxA)
 
+<br/>
+<br/>
 
 # ScreenShots
 
